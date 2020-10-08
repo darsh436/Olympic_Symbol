@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>Olympic Symbol</title>
+</head>
+<body class="body_backgorund">
+
+<center>
+	<h1>Olympic Symbol</h1>
+	<canvas id="myCanvas" width="800" height="600">
+	</canvas>
+</center>
+<style>
+    .body_backgorund {
+  background-image: url("flower-frame-drawing-floral-background-vector-18305578.jpg");
+  background-position: center;
+  background-size: cover;
+}
+h1
+{
+	color: black; 
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#myCanvas
+{
+
+	background-color: black; 
+	border-style:ridge;
+}
+span
+{
+	font-size: 20px;
+}
+.copy_right_footer {
+    position: fixed;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    background-color:grey;
+    line-height: 3;
+    text-align: center;
+  }
+</style>
+
+	<script>
+        canvas = document.getElementById("myCanvas");
+ctx= canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.strokeStyle = "white";
+ctx.lineWidth = 1;
+ctx.rect(180, 143, 430, 200);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = "cyan";
+ctx.lineWidth = 5;
+ctx.arc(290, 210, 40 ,0 , 2 * Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = "brown";
+ctx.lineWidth = 5;
+ctx.arc(390, 210, 40 ,0 , 2 * Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = "cyan";
+ctx.lineWidth = 5;
+ctx.arc(490, 210, 40 ,0 , 2 * Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = "orange";
+ctx.lineWidth = 5;
+ctx.arc(340, 260, 40 ,0 , 2 * Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.strokeStyle = "blue";
+ctx.lineWidth = 5;
+ctx.arc(440, 260, 40 ,0 , 2 * Math.PI);
+ctx.stroke();
+
+	</script>
+	  <div class="copy_right_footer">
+		Developed by - A profesnal coder, Darsh Patel
+	  </div>
+
+</body>
+</html>
